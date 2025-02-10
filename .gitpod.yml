@@ -1,0 +1,9 @@
+image:
+  file: .gitpod.Dockerfile
+
+# Optional: Specify tasks to run on startup
+tasks:
+  - name: Install dependencies
+    command: |
+      conda install -c conda-forge conda-build
+
