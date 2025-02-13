@@ -47,7 +47,7 @@ requirements:
     - probconsrna
     - ruby
     - sap
-    - tmalign ==20170708
+    - tmalign 20170708
     - viennarna
   run:
     - blast
@@ -70,7 +70,7 @@ requirements:
     - probconsrna
     - ruby
     - sap
-    - tmalign ==20170708
+    - tmalign 20170708
     - viennarna
     
 test:
