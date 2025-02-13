@@ -24,7 +24,6 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}
-  host :
     - perl-xml-simple
     - perl
     - sphinx
