@@ -1,11 +1,11 @@
-{% set version = "13.46.0.919e8c6b" %}
+{% set version = "13.46.1.b8b01e06" %}
 
 package:
   name: t-coffee
   version: {{ version }}
 
 build:
-  number: 4
+  number: 5
   run_exports:
     - {{ pin_subpackage('t-coffee', max_pin="x") }}
   skip: True # [osx]
@@ -23,7 +23,11 @@ requirements:
     - make
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - {{ compiler('fortran') }}
+  host :
     - perl-xml-simple
+    - perl
+    - sphinx
     - blast
     - clustalo
     - clustalw
@@ -44,7 +48,7 @@ requirements:
     - probconsrna
     - ruby
     - sap
-    - tmalign
+    - tmalign ==20170708
     - viennarna
   run:
     - blast
@@ -67,7 +71,7 @@ requirements:
     - probconsrna
     - ruby
     - sap
-    - tmalign
+    - tmalign ==20170708
     - viennarna
     
 test:

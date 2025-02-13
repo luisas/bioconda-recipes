@@ -31,3 +31,10 @@ fi
 rm -fv ${PREFIX}/bin/*
 
 sed -e "s|CHANGEME|${SHARE_DIR}|" -e "s|__OS__|${OS}|" "$RECIPE_DIR/t_coffee.sh" > "${PREFIX}/bin/t_coffee"
+
+
+# Test dataset 
+wget https://raw.githubusercontent.com/nf-core/test-datasets/multiplesequencealign/testdata/setoxin-ref.fa	
+wget https://raw.githubusercontent.com/nf-core/test-datasets/multiplesequencealign/testdata/af2_structures/seatoxin-ref.tar.gz
+tar -xvf seatoxin-ref.tar.gz
+wget https://raw.githubusercontent.com/nf-core/test-datasets/multiplesequencealign/testdata/templates/seatoxin-ref_template.txt
